@@ -1,6 +1,6 @@
 ---
 title: batapy88.com
-subtitle: Support sustainable farming while enjoying a cup
+subtitle: でん六のバタピーが大好きなへっぽこエンジニアです。テック系や生活系のネタをいろいろメモしていこうと思います。
 image: /img/home-jumbotron.jpg
 blurb:
   heading: Why Kaldi?
