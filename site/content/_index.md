@@ -1,7 +1,7 @@
 ---
 title: batapy88.com
 subtitle: でん六のバタピーが大好きなへっぽこエンジニアです。テック系や生活系のネタをいろいろメモしていこうと思います。
-image: /img/home-jumbotron.jpg
+image: /img/abaf8273e2873bffff621129e15114dd_m.jpg
 blurb:
   heading: Why Kaldi?
   text: >-
