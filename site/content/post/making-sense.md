@@ -150,12 +150,21 @@ main.cssを開くと以下の記述が。
 そして、main.cssと同階層にcustom.cssを追加します。
 
 ```
+.bg-fix-primary :first-child {
+    box-shadow: 0.5rem 0 0 #00ff00, -0.5rem 0 0 #00ff00;
+}
 
+.bg-primary {
+    background-color: #00ff00;
+}
 ```
 
 たとえばこんなふうに書くと、変更前はオレンジだった文字の背景を、
 
+![before](../../static/img/before.png)
+
 緑色に変えたりすることができます。
 
+![after](../../static/img/after.png)
 
 これで自分の好きなデザインに変えていくことができそうです。
