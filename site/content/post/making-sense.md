@@ -148,3 +148,9 @@ main.cssを開くと以下の記述が。
 ```
 
 そして、main.cssと同階層にcustom.cssを追加します。
+
+custom.cssのサンプル
+
+```
+
+```
