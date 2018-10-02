@@ -1,0 +1,7 @@
+.bg-fix-primary :first-child {
+    box-shadow: 0.5rem 0 0 #00ff00, -0.5rem 0 0 #f40;
+}
+
+.bg-primary {
+    background-color: #00ff00;
+}
