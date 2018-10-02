@@ -1,27 +1,44 @@
 ---
 title: Netlify-CMSのCSSを上書きしてカスタマイズする
-date: '2018-10-02T00:00:00+09:00'
+date: '2018-10-02T23:50:00+09:00'
 description: Netrify-CMSのCSSを上書きして、思い通りにカスタマイズする方法を探っていきます。
 image: /img/blog-flavor_wheel.jpg
 ---
+Netlify-CMSでサイトを立ち上げるとこまではできました。
 
-The SCAA updated the wheel to reflect the finer nuances needed to describe flavors more precisely. The new descriptions are more detailed and hence allow cuppers to distinguish between more flavors.
+次は、デフォルトテンプレートのデザインを自分の好みに変えたいです。
+さて、CSSはどこだ？CSSを探します。
 
-While this is going to be a big change for professional coffee tasters, it means a lot to you as a consumer as well. We’ll explain how the wheel came to be, how pros use it and what the flavors actually mean.
+headタグ内は以下のようになっていました。
 
-## What the updates mean to you
+```
+<head>
+	<meta name="generator" content="Hugo 0.31">
+	<title>exsample.com | Sample</title>
+	<link rel="stylesheet" href="/css/main.css">
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
+	<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#ff4400">
+	<meta name="theme-color" content="#fff">
+	<meta property="og:type" content="business.business">
+	<meta property="og:title" content="Kaldi | Great coffee with a conscience">
+	<meta property="og:url" content="/">
+	<meta property="og:image" content="/img/og-image.jpg">
+	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+```
 
-The Specialty Coffee Association of America (SCAA), founded in 1982, is a non-profit trade organization for the specialty coffee industry. With members located in more than 40 countries, SCAA represents every segment of the specialty coffee industry, including:
+CSSを読み込んでるところは以下の行だけみたいですね。
 
-- producers
-- roasters
-- importers/exporters
-- retailers
-- manufacturers
-- baristas
+```
+<link rel="stylesheet" href="/css/main.css">
+```
 
-For over 30 years, SCAA has been dedicated to creating a vibrant specialty coffee community by recognizing, developing and promoting specialty coffee. SCAA sets and maintains quality standards for the industry, conducts market research, and provides education, training, resources, and business services for its members.
-
-Coffee cupping, or coffee tasting, is the practice of observing the tastes and aromas of brewed coffee. It is a professional practice but can be done informally by anyone or by professionals known as "Q Graders". A standard coffee cupping procedure involves deeply sniffing the coffee, then loudly slurping the coffee so it spreads to the back of the tongue.
-
-The coffee taster attempts to measure aspects of the coffee's taste, specifically the body (the texture or mouthfeel, such as oiliness), sweetness, acidity (a sharp and tangy feeling, like when biting into an orange), flavour (the characters in the cup), and aftertaste. Since coffee beans embody telltale flavours from the region where they were grown, cuppers may attempt to identify the coffee's origin.
+ローカルリポジトリを確認します。
+ファイルの場所は以下です。
