@@ -2,7 +2,7 @@
 title: Netlify-CMSのCSSを上書きしてカスタマイズする
 date: '2018-10-02T23:50:00+09:00'
 description: Netrify-CMSのCSSを上書きして、思い通りにカスタマイズする方法を探っていきます。
-image: /img/blog-flavor_wheel.jpg
+image: /img/acdc215361ff30c6923b211bdc6ae1de_m-min.jpg
 ---
 こんばんは。batapy88です。
 
