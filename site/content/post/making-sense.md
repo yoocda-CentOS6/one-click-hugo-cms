@@ -161,20 +161,12 @@ main.cssを開くと以下の記述が。
 
 たとえばこんなふうに書くと、
 
-変更前はオレンジだった文字の背景を、
+オレンジだった文字の背景色を、
 
 ![before](/img/before.png)
 
-![before](../../static/img/before.png)
-
-
-
 緑色に変えることができました。
 
-![]()
-
-
-
-![after](../../static/img/after.png)
+![after](/img/after.png)
 
 これで自分の好きなデザインに変えていくことができそうです。
