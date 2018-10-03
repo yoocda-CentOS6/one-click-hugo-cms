@@ -1,14 +1,19 @@
 ---
 title: batapy88.com
-subtitle: でん六のバタピーが大好きなへっぽこエンジニアです。テック系や生活系のネタをいろいろメモしていこうと思います。
+subtitle: でん六のバタピーが大好きです。IT系や生活系の話題をいろいろ書いていこうと思います。
 image: /img/abaf8273e2873bffff621129e15114dd_m.jpg
 blurb:
-  heading: Why Kaldi?
+  heading: なぜ「バタピー」は「でん六」なのか
   text: >-
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
+    「バタピー」と言っても、いろんな食品メーカーから出ているのです。ではなぜ「でん六」なのか？！それは「品質（Quality）が他のものとはぜんぜん違う！！」からです。
+
+    食べてみてください。その塩加減とピーナッツの甘さの絶妙なバランスに圧倒されることでしょう。
+
+    何個か袋から出して並べてみてください。
+
+    大きさ、形、色合い、照りツヤが文字通り粒揃いなことに気が付くことでしょう。
+
+    香りをかいでみてください。香ばしくかぐわしい香りにウットリ目を細めてしまうことでしょう。
 intro:
   heading: What we offer
   text: >-
