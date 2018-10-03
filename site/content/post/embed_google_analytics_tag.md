@@ -2,7 +2,7 @@
 title: Netlify-CMSにGoogle Analyticsタグを仕込む
 date: '2018-10-03T23:20:10+09:00'
 description: Netlify-CMSにGoogle Analyticsタグを仕込む方法を探っていきます。
-image: /img/blog-chemex.jpg
+image: /img/79fb3ca3058e0d922eb945593e039bb8_m-min.jpg
 ---
 こんばんは。batapy88です。
 
