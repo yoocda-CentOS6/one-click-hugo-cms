@@ -4,20 +4,76 @@ date: '2018-10-03T23:20:10+09:00'
 description: Netlify-CMSにGoogle Analyticsタグを仕込む方法を探っていきます。
 image: /img/blog-chemex.jpg
 ---
+こんばんは。batapy88です。
 
-This [week](/wdwdw) we’ll **take** a look at all the steps required to make astonishing coffee with a Chemex at home. The Chemex Coffeemaker is a manual, pour-over style glass-container coffeemaker that Peter Schlumbohm invented in 1941, and which continues to be manufactured by the Chemex Corporation in Chicopee, Massachusetts\*.
+Netlify-CMSで立ち上げたサイトにGoogle Analyticsタグを仕込んでアクセス解析したいです。
+さてどのファイルにGoogle Analyticsタグを設置すればよいのか。そもそも設置できるのか？？いや、できるはず。
 
-In 1958, designers at the [Illinois Institute of Technology](https://www.spacefarm.digital) said that the Chemex Coffeemaker is *"one of the best-designed products of modern times"*, and so is included in the collection of the Museum of Modern Art in New York City.
+ローカルリポジトリのファイル群を漁ってみると…、ありましたありました。
 
-## The little secrets of Chemex brewing
+## head要素生成用ファイルにタグを追記する
 
-The Chemex Coffeemaker consists of an hourglass-shaped glass flask with a conical funnel-like neck (rather than the cylindrical neck of an Erlenmeyer flask) and uses proprietary filters, made of bonded paper (thicker-gauge paper than the standard paper filters for a drip-method coffeemaker) that removes most of the coffee oils, brewing coffee with a taste that is different than coffee brewed in other coffee-making systems; also, the thicker paper of the Chemex coffee filters may assist in removing cafestol, a cholesterol-containing compound found in coffee oils. Here’s three important tips newbies forget about:
+ファイルの所在は以下です。
 
-1. Always buy dedicated Chemex filters.
-2. Use a scale, don’t try to eyeball it.
-3. Never skip preheating the glass.
-4. Timing is key, don’t forget the clock.
+```
+/layout/partial/head.html
+```
 
-The most visually distinctive feature of the Chemex is the heatproof wooden collar around the neck, allowing it to be handled and poured when full of hot water. This is turned, then split in two to allow it to fit around the glass neck. The two pieces are held loosely in place by a tied leather thong. The pieces are not tied tightly and can still move slightly, retained by the shape of the conical glass.
+head.htmlの変更前の中身は以下。
+```
+<head>
 
-For a design piece that became popular post-war at a time of Modernism and precision manufacture, this juxtaposition of natural wood and the organic nature of a hand-tied knot with the laboratory nature of glassware was a distinctive feature of its appearance.
+	<title>{{ .Title }} | Kaldi</title>
+	<link rel="stylesheet" href="/css/main.css" />
+
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#ff4400">
+	<meta name="theme-color" content="#fff">
+
+	<!-- Open Graph -->
+	<meta property="og:type" content="business.business">
+	<meta property="og:title" content="Kaldi | Great coffee with a conscience">
+	<meta property="og:url" content="/">
+	<meta property="og:image" content="/img/og-image.jpg">
+
+	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+```
+
+上記の`</head>`の直前にGoogle AnalyticsタグをそのままペーストすればOK。
+
+```
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-xxxxxxxxx-x"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-xxxxxxxxx-x');
+	</script>
+```
+
+ペーストが終わったら、ローカルリポジトリで以下コマンドを実行してNetlifyにデプロイする。
+
+```
+git fetch
+git pull
+git add . -A
+git commit -m "Google Analyticsタグを追加しました。"
+git push
+```
+
+ページを更新した後、デベロッパーツールでheadタグの最後にGoogle Analyticsタグが挿入されていることを確認しましょう。
+ちゃんと追加されていたら、Google Analyticsの管理画面に行くとアクティブユーザーに「1名」が表示されている。成功！
+
+よーし、これでアクセス解析やるぞー！
