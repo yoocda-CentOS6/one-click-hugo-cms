@@ -2,6 +2,7 @@
 title: Netlify-CMSのhead要素内をカスタマイズする
 date: '2018-10-04T22:30:10+09:00'
 description: title要素やlink要素を変更して、Netlify-CMSをカスタマイズする方法を探っていきます。
+image: ''
 ---
 こんばんは。batapy88です。
 
@@ -46,6 +47,12 @@ head要素内の該当箇所を変更していきます。
 
 変更前
 
-![]()
+![tittle_before](/img/title_before.png)
 
 変更後
+
+![title_after](/img/title_after.png)
+
+
+
+トップページは、ページのタイトルとサイト名がかぶっちゃってますが、気にしません。何かいいアイディアが浮かんだら変更することにしようっと。
