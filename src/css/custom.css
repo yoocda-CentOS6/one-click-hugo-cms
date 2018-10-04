@@ -1,5 +1,2 @@
-:root {
-	/* Colors */
-    --primary: rgba(255, 195, 0, 1);
-    --highlight: rgba(250, 140, 0, 1);
-}
+--primary: rgba(255, 195, 0, 1);
+--highlight: rgba(250, 140, 0, 1);
