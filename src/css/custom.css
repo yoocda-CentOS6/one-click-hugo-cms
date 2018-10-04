@@ -1,4 +1,7 @@
-:root {
-	/* Colors */
-    --primary: rgba(255, 195, 0, 1);
+.bg-fix-primary :first-child {
+    box-shadow: 0.5rem 0 0 #ffc400, -0.5rem 0 0 #ffc400;
+}
+
+.bg-primary {
+    background-color: #ffc400;
 }
