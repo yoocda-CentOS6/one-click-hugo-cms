@@ -1,6 +1,6 @@
 pre {
-    color: var(--white);
-    background-color: var(--black);
+    color: --white;
+    background-color: --black;
 }
 
 :root {
