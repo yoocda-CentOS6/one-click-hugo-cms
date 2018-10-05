@@ -28,7 +28,7 @@ products:
       IT系やWeb系の話題は好きですが専門職ではありません。素人に毛が生えた程度。中の下。Google先生に先人たちの教えを乞う毎日。Windows、Ubuntu、GitHub、Python、npm、Chrome、EmEditorが好き。いつか専門職になりた～い。
   - image: /img/illustrations-coffee-gear.svg
     text: >-
-      batapy88は子育て中。連れと交代で育児ノイローゼになりながら怪獣にスペシウム光線を浴びせられる毎日。ときどきホントにしんどい。でも怪獣が天使と錯覚するたびに復活してなんとか持ちこたえる。
+      batapy88は子育て中。連れと交代で育児ノイローゼになりながら怪獣チルドンに攻撃を食らう毎日。ときどきホントにしんどい。でも怪獣のことを天使と錯覚するたびになんとか復活してなんとか持ちこたえている。
 values:
   heading: Our values
   text: >-
