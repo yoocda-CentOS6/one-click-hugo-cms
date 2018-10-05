@@ -19,12 +19,9 @@ blurb:
 
     （※あくまで個人的な感想です。）
 intro:
-  heading: What we offer
+  heading: batapy88はあなたに何をももたらせるでしょうか
   text: >-
-    Kaldi is the ultimate spot for coffee lovers who want to learn about their
-    java’s origin and support the farmers that grew it. We take coffee
-    production, roasting and brewing seriously and we’re glad to pass that
-    knowledge to anyone.
+    batapy88は、IT系やWeb系、コンピューター関連の話題が大好きです。日頃から、人間と話す時間よりコンピューターと会話したり見つめあったりしている時間のほうが圧倒的に長いでしょう。だから、あなたにもその時間で巡り合った発見や驚き、ときには苦難について、あふれんばかりの感情を共有したいと思っているのです。
 products:
   - image: img/illustrations-coffee.svg
     text: >-
