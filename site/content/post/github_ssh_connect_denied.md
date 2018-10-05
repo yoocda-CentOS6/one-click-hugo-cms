@@ -1,11 +1,11 @@
 ---
-title: githubとのssh接続が切れて、ハマったのでメモ
+title: GitHubとのssh接続が切れて、ハマったのでメモ
 date: '2018-10-05T22:28:49+09:00'
 description: GitHubとのssh接続が突然途切れて、かなりこまったのでそのときのメモです。
 ---
 
 ## 症状
-git fetch、git pull、git pushすると以下のコマンドが出る。
+git fetch、git pull、git pushすると以下のエラーメッセージが出る。
 ```
 Load key "/c/Users/hirofumi-yoshida.SCIENCE/.ssh/id_rsa": Permission denied
 git@github.com: Permission denied (publickey).
