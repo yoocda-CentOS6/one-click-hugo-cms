@@ -1,11 +1,12 @@
+pre {
+    color: var(--white);
+    background-color: var(--black);
+}
+
 :root {
 	/* Colors */
     --primary: rgba(255, 195, 0, 1);
     --highlight: rgba(250, 140, 0, 1);
 }
 
-pre {
-    color: var(--white);
-    background-color: var(--black);
-  }
   
