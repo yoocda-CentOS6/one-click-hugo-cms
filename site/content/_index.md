@@ -25,13 +25,10 @@ intro:
 products:
   - image: img/illustrations-coffee.svg
     text: >-
-      IT系やWeb系の話題は好きですが専門職ではありません。素人に毛が生えた程度。中の下。Google先生に先人たちの教えを乞う毎日。Windows、Ubuntu、GitHub、Python、npm、Chrome、EmEditorが好きです。いつか専門職になりた～い。
+      IT系やWeb系の話題は好きですが専門職ではありません。素人に毛が生えた程度。中の下。Google先生に先人たちの教えを乞う毎日。Windows、Ubuntu、GitHub、Python、npm、Chrome、EmEditorが好き。いつか専門職になりた～い。
   - image: /img/illustrations-coffee-gear.svg
     text: >-
-      We offer a small, but carefully curated selection of brewing gear and
-      tools for every taste and experience level. No matter if you roast your
-      own beans or just bought your first french press, you’ll find a gadget to
-      fall in love with in our shop.
+      batapy88は子育て中。連れと交代で育児ノイローゼになりながら怪獣にスペシウム光線を浴びせられる毎日。ときどきホントにしんどい。でも怪獣が天使と錯覚するたびに復活してなんとか持ちこたえる。
 values:
   heading: Our values
   text: >-
