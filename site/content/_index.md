@@ -21,15 +21,11 @@ blurb:
 intro:
   heading: batapy88はあなたに何をももたらせるでしょうか
   text: >-
-    batapy88は、IT系やWeb系、コンピューター関連の話題が大好きです。日頃から、人間と話す時間よりコンピューターと会話したり見つめあったりしている時間のほうが圧倒的に長いでしょう。一方で、batapy88は愛する家族に囲まれて暮らす幸せ者でもあります。家族と共にbatapy88も成長し続けているのです。だから、あなたにもその両方で巡り合った発見や驚き、ときには苦難について、あふれんばかりの感情を共有したいと思っているのです。
+    batapy88は、IT系やWeb系の話題が大好きです。日頃から人間と話す時間よりもコンピューターと会話し見つめあっている時間のほうが圧倒的に長いでしょう。一方で、batapy88は愛する家族に囲まれて暮らす幸せ者でもあります。家族と共にbatapy88も成長し続けているのです。だから、あなたにもその両方で巡り合った発見や驚き、ときには苦難について、あふれんばかりの感情を共有したいと思っているのです。
 products:
   - image: img/illustrations-coffee.svg
     text: >-
-      We sell green and roasted coffee beans that are sourced directly from
-      independent farmers and farm cooperatives. We’re proud to offer a variety
-      of coffee beans grown with great care for the environment and local
-      communities. Check our post or contact us directly for current
-      availability.
+      IT系やWeb系の話題は好きですが専門職ではありません。素人に毛が生えた程度。中の下。Google先生に先人たちの教えを乞う毎日。Windows、Ubuntu、GitHub、Python、npm、Chrome、EmEditorが好きです。いつか専門職になりた～い。
   - image: /img/illustrations-coffee-gear.svg
     text: >-
       We offer a small, but carefully curated selection of brewing gear and
