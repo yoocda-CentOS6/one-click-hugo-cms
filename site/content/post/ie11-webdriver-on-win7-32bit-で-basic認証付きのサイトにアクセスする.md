@@ -4,12 +4,9 @@ date: '2018-10-08T15:18:57+09:00'
 description: >-
   こんにちは。batapy88です。IE11のwebdriverを、Windows7(32bit)で動かして、さらにBasic認証付きのサイトにアクセスする方法を探っていきます。
 ---
-まずは、Webdriverを動かすためのソースコードを例示します。
-
-Webdriverは様々な言語から動かすことができますが、今回はPythonで動かすコードを書きます。
+まずは、Selenium webdriverを動かすためのソースコードを例示します。
 
 ## Pythonソースコード
-
 
 ```
 from selenium import webdriver
