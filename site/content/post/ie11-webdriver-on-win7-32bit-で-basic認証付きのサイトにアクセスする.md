@@ -37,7 +37,7 @@ https://docs.seleniumhq.org/download/
 ```
 Download version 3.14.0 for (recommended) 32 bit Windows IE or 64 bit Windows IE
 ```
-* 64bit環境でもwebdriverは32bitを使うことにします。64bitはめちゃくちゃ速度が遅いと他の記事にも書いてありますが、64bitマシン上で64bitのWebdriverを動かしてみたところ、本当に遅くてすぐ使うのをやめました。
+* 64bit環境でもwebdriverは32bitを使うことにします。64bitはめちゃくちゃ速度が遅いと他の記事にも書いてありますが、試しに64bitマシン上で64bitのWebdriverを動かしてみたところ、本当に遅くてすぐ使うのをやめました。
 
 ## webdriverのファイル名
 ```
@@ -47,18 +47,23 @@ IEDriverServer.exe
 
 ## webdriver配置場所
 pythonファイル（IE11.py）と同じフォルダ内に入れておきます。
-* PATHを通すようにとの記事もありますが、同じフォルダ内なら`driver = webdriver.Ie()`で参照できます。
+* PATHを通すようにとの記事もありますが、同じフォルダ内なら `driver = webdriver.Ie()` で参照できます。
 
 ## IEのインターネットオプション
-セキュリティタブ
-「保護モードを有効にする」にすべてチェックマークを入れる
+セキュリティタブを開き、すべてのタブの「保護モードを有効にする」にチェックマークを入れます
 
 ## Win7 32bitのレジストリキー変更
+レジストリの変更は自己責任でお願いします。
+レジストリエディタの起動は、コマンドプロンプトを起動し、regedit.exe と入力して起動できます。
+```
 HKEY_LOCAL_MACHINE/SOFTWARE/Microsoft/Internet Explorer/MAIN/FeatureControl/FEATURE_HTTP_USERNAME_PASSWORD_DISABLE
-DWORD iexplore.exeを新規追加し、値を0にする
-* 64bit環境では、レジストリのパスが異なる。
-途中にWow6432Nodeが追加されている。
-レジストリエディタの起動は、cmd > regedit.exe で起動する
-Wow6432NodeはSOFTWAREツリーの最下部にある。
+```
+上記項目に DWORD iexplore.exe を新規追加し、値を0にします。
+* 64bit環境では、レジストリのパスが異なります。以下のように途中にWow6432Nodeが追加されています。
+
+Wow6432NodeはSOFTWAREツリーの最下部にあります。
+
+```
 HKEY_LOCAL_MACHINE/SOFTWARE/Wow6432Node/Microsoft/Internet Explorer/MAIN/FeatureControl/FEATURE_HTTP_USERNAME_PASSWORD_DISABLE
+```
 
