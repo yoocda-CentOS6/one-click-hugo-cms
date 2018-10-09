@@ -1,13 +1,16 @@
 ---
 title: Netlify-CMSにGoogle Analyticsタグを仕込む
 date: '2018-10-03T23:20:10+09:00'
-description: Netlify-CMSにGoogle Analyticsタグを仕込む方法を探っていきます。
-image: /img/79fb3ca3058e0d922eb945593e039bb8_m-min.jpg
+description: こんばんは、batapy88です。今日はNetlify-CMSにGoogle Analyticsタグを仕込む方法を探っていきます。
+image: ''
 ---
-こんばんは。batapy88です。
+## Google Anlytics導入したい
 
 Netlify-CMSで立ち上げたサイトにGoogle Analyticsタグを仕込んでアクセス解析したいです。
-さてどのファイルにGoogle Analyticsタグを設置すればよいのか。そもそも設置できるのか？？いや、できるはず。
+
+さてどのファイルにGoogle Analyticsタグを設置すればよいのか。
+
+そもそも設置できるのか？？いや、できるはず。
 
 ローカルリポジトリのファイル群を漁ってみると…、ありましたありました。
 
@@ -20,6 +23,7 @@ Netlify-CMSで立ち上げたサイトにGoogle Analyticsタグを仕込んで�
 ```
 
 head.htmlの変更前の中身は以下。
+
 ```
 <head>
 
@@ -73,7 +77,14 @@ git commit -m "Google Analyticsタグを追加しました。"
 git push
 ```
 
-ページを更新した後、デベロッパーツールでheadタグの最後にGoogle Analyticsタグが挿入されていることを確認しましょう。
-ちゃんと追加されていたら、Google Analyticsの管理画面に行くとアクティブユーザーに「1名」が表示されている。成功！
+## 確認
+
+ページを更新した後、デベロッパーツールでheadタグの最後にGoogle Analyticsタグが挿入されていることを確認します。
+
+ちゃんと追加されてる。
+
+Google Analyticsの管理画面に行くとアクティブユーザーに「1名」が表示されている。
+
+成功！
 
 よーし、これでアクセス解析やるぞー！
