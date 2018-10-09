@@ -1,7 +1,7 @@
 ---
 title: GitHubとのssh接続が切れて、ハマったのでメモ
 date: '2018-10-05T22:28:49+09:00'
-description: GitHubとのssh接続が突然途切れて、かなりこまったのでそのときのメモです。
+description: こんばんは。batapy88です。GitHubとのssh接続が突然途切れて、かなり困ったのでそのときのメモです。同じように困ってる人の役に立てれば。
 ---
 ## 症状
 
@@ -19,7 +19,7 @@ GitHubのssh and GPG keysには確かにsshキーが登録されている。
 
 怪しいので新たにsshキーペアを作成する。
 
-Windows10なので、cmd.exeで叩いていたが、git-bash.exeでないオフィシャルの説明についていけないためgit-bash.exeを起動。
+Windows10なので、cmd.exeで叩いていたが、git-bash.exeでないとオフィシャルの説明についていけないためgit-bash.exeを起動。
 
 システム環境変数を開き、git-bash.eceにPATHを通す。
 
