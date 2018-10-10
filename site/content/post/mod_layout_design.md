@@ -1,5 +1,5 @@
 ---
-title: Netlify-CMSの構成を変える
+title: Netlify-CMSのページ構成を変える
 date: '2018-10-09T22:28:29+09:00'
 description: こんばんは、batapy88です。今日は、Netlify-CMSのページ構成を変える方法を探っていこうと思います。
 ---
