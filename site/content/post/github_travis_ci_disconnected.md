@@ -23,9 +23,11 @@ Could not parse .travis.yml
 
 「.travis.ymlがパースできない」とのこと。
 
-エラーメッセージをGoogle先生で検索したら、同じようなことで困っている人を発見。
+エラーメッセージをGoogle先生で検索したら、
+同じようなことで困っている人を発見。
 
-[https://stackoverflow.com/questions/50551277/could-not-parse-travis-yml](https://stackoverflow.com/questions/50551277/could-not-parse-travis-yml)
+[https://stackoverflow.com/questions/50551277/could-not-parse-travis-yml](https://stackoverflow.com/questions/50551277/could-not-parse-travis-yml
+)
 
 この人はPythonだ。自分の.travis.ymlはRubyで書いてある。
 Pythonだと、改行（改行コード）をやめて一行にしたら動いたようだ。
@@ -55,13 +57,13 @@ TRAVIS CIに食わせるリポジトリ上のMakefileは行頭インデントは
 NG
 
 ```
-  redpen -f asciidoc source/*.adoc
+  echo fugafuga > fuga.txt
 ```
 
 
 OK
 
 ```
-	redpen -f asciidoc source/*.adoc
+	echo fugafug > fuga.txt
 ```
 

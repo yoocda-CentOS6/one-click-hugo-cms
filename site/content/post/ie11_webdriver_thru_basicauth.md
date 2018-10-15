@@ -4,9 +4,10 @@ date: '2018-10-08T15:18:57+09:00'
 description: >-
   こんにちは。batapy88です。IE11のwebdriverを、Windows7(32bit)で動かして、さらにBasic認証付きのサイトにアクセスする方法を探っていきます。
 ---
-まずは、Selenium webdriverを動かすためのソースコードを例示します。
 
 ## Pythonソースコード
+
+まずは、Selenium webdriverを動かすためのソースコードの例です。
 
 ```
 from selenium import webdriver
@@ -34,7 +35,8 @@ https://docs.seleniumhq.org/download/
 ```
 Download version 3.14.0 for (recommended) 32 bit Windows IE or 64 bit Windows IE
 ```
-* 64bit環境でもwebdriverは32bitを使うことにします。64bitはめちゃくちゃ速度が遅いと他の記事にも書いてありますが、試しに64bitマシン上で64bitのWebdriverを動かしてみたところ、本当に遅くてすぐ使うのをやめました。
+* 64bit環境でもwebdriverは32bitを使うことにします。
+64bitのはめちゃくちゃ速度が遅いと他の記事にも書いてありますが、試しに64bitマシン上で64bitのWebdriverを動かしてみたところ、本当に遅くてすぐ使うのをやめました。
 
 ## webdriverのファイル名
 ```
@@ -47,20 +49,19 @@ pythonファイル（IE11.py）と同じフォルダ内に入れておきます�
 * PATHを通すようにとの記事もありますが、同じフォルダ内なら `driver = webdriver.Ie()` で参照できます。
 
 ## IEのインターネットオプション
-セキュリティタブを開き、すべてのタブの「保護モードを有効にする」にチェックマークを入れます
+セキュリティタブを開き、すべてのタブの「保護モードを有効にする」にチェックマークを入れます
 
 ## Win7 32bitのレジストリキー変更
 レジストリの変更は自己責任でお願いします。
-レジストリエディタの起動は、コマンドプロンプトを起動し、regedit.exe と入力して起動できます。
+レジストリエディタの起動は、コマンドプロンプトを起動し、regedit.exe と入力すれば起動できます。
 ```
 HKEY_LOCAL_MACHINE/SOFTWARE/Microsoft/Internet Explorer/MAIN/FeatureControl/FEATURE_HTTP_USERNAME_PASSWORD_DISABLE
 ```
 上記項目に DWORD iexplore.exe を新規追加し、値を0にします。
-* 64bit環境では、レジストリのパスが異なります。以下のように途中にWow6432Nodeが追加されています。
+* 64bit環境では、レジストリのパスが異なります。下記のように途中にWow6432Nodeが追加されています。
 
 Wow6432NodeはSOFTWAREツリーの最下部にあります。
 
 ```
 HKEY_LOCAL_MACHINE/SOFTWARE/Wow6432Node/Microsoft/Internet Explorer/MAIN/FeatureControl/FEATURE_HTTP_USERNAME_PASSWORD_DISABLE
 ```
-

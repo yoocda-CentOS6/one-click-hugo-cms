@@ -107,3 +107,4 @@ site\layouts\_default\baseof.html
 これで導入できました。
 
 Google Tag Managerを使うと、サイト内のページにいろんなタグを簡単に仕込めるそうなので、今後うまく使っていきたいと思います。
+

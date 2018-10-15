@@ -30,7 +30,7 @@ C:\Program Files\Git\git-bash.exe
 キーペア作成。
 
 ```
-ssh-keygen -t rsa -b 4096 -C "hirofumi-yoshida@science.co.jp"
+ssh-keygen -t rsa -b 4096 -C "batapy88@batapy88.com"
 ```
 
 秘密鍵登録しようとするも、sshエージェント起動に失敗
@@ -43,13 +43,13 @@ Could not open a connection to your authentication agent.
 以下コマンドをgit-bash.exeで入力
 
 ```
-$ eval `ssh-agent`
+$ eval `ssh-agent -s`
 ```
 
 入力直後にpidが表示されればsshエージェント起動完了
 
 ```
-$ eval `ssh-agent`
+$ eval `ssh-agent -s`
 Agent pid 10516
 ```
 
@@ -60,7 +60,7 @@ $ ssh-add id_rsa
 id_rsa: Permission denied
 ```
 
-アクセス権変更しようとするが、変えられない（Windowsなので当たり前で）。
+アクセス権変更しようとするが、変えられない（Windowsなので当たり前）。
 
 ```
 chmod 600 id_rsa
@@ -83,9 +83,6 @@ id_rsa、id_rsa.pubのアクセス権を以下のように変更する
 \|自分自身 |全部チェックを入れる |全部チェック外す
 
 \|ローカルアドミニストレーター |全部チェックを入れる |全部チェック外す
-
-
-
 
 
 変更後、再度秘密鍵登録を試みる。今度は登録成功。
