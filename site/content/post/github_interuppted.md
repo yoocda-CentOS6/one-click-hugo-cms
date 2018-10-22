@@ -63,6 +63,8 @@ FireFoxに変えてみたところ、一時的に正常に戻ったような挙�
 
 連携させているTRAVIS CIを開いてみる。
 
+![travis_oauth.png](travis_oauth.png)
+
 TRAVIS CI側で何か操作しようとしても、GitHubのOAuthを確認しにいくとさっきの「What!?」のページに遷移してしまい何もできない。
 
 「これは困った。あきらめて別の作業をしよう。」
