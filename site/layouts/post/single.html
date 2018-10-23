@@ -2,15 +2,15 @@
 
   <div class="mw6 center ph3 pv4">
     <h1 class="f2 lh-title b mb3">{{.Title}}</h1>
-    <a href="https://px.a8.net/svt/ejp?a8mat=2ZRYNR+E97O8I+50+5SEKLD" target="_blank" rel="nofollow">
-      <img border="0" width="728" height="90" alt="" src="https://www23.a8.net/svt/bgt?aid=181023543862&wid=001&eno=01&mid=s00000000018035004000&mc=1"></a>
-      <img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=2ZRYNR+E97O8I+50+5SEKLD" alt="">
     <div class="flex justify-between grey-3">
       <p>{{ .Date.Format "2006/1/2 Mon" }}</p>
       <p>Read in {{ .ReadingTime }} minutes</p>
     </div>
     <div class="cms mw6">
       <p>{{ .Description }}</p>
+      <a href="https://px.a8.net/svt/ejp?a8mat=2ZRYNR+E97O8I+50+5SEKLD" target="_blank" rel="nofollow">
+        <img border="0" width="728" height="90" alt="" src="https://www23.a8.net/svt/bgt?aid=181023543862&wid=001&eno=01&mid=s00000000018035004000&mc=1"></a>
+        <img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=2ZRYNR+E97O8I+50+5SEKLD" alt="">
       {{ if .Params.image }}<img src="{{ .Params.image }}" alt="{{ .Title }}" />{{ end }}
       {{ .Content }}
     </div>
