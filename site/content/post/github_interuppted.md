@@ -23,7 +23,7 @@ description: こんばんは、batapy88です。今日はGitHubに障害が発�
 
 だが、以下のような画面が表示されてログインできない。
 
-![gh_oh_no.png](gh_oh_no.png)
+![gh_oh_no.png](img/gh_oh_no.png)
 
 メッセージには以下のように書かれていた。
 
@@ -63,7 +63,7 @@ FireFoxに変えてみたところ、一時的に正常に戻ったような挙�
 
 連携させているTRAVIS CIを開いてみる。
 
-![travis_oauth.png](travis_oauth.png)
+![travis_oauth.png](img/travis_oauth.png)
 
 TRAVIS CI側で何か操作しようとしても、GitHubのOAuthを確認しにいくとさっきの「What!?」のページに遷移してしまい何もできない。
 
