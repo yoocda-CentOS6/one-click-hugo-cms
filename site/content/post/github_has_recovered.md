@@ -22,7 +22,7 @@ GitHub Statusのツイッターを見る限り、24時間かかったことに�
 
 奇しくも障害発生の週末金曜日に、GitHubは正式にMicrosoftのものになった。
 
-![https://blog.github.com/jp/2018-10-26-github-and-microsoft/](https://blog.github.com/jp/2018-10-26-github-and-microsoft/)
+[https://blog.github.com/jp/2018-10-26-github-and-microsoft/](https://blog.github.com/jp/2018-10-26-github-and-microsoft/)
 
 これまで大きな障害が一度も発生していなかったGitHubで今回障害が起きたことと、Microsoftの正式買収発表が、こんなにも近い日程で、1週間のあいだに起こったのは偶然だろうか。
 
