@@ -3,6 +3,12 @@ pre {
     background-color: #000000;
 }
 
+h1 {
+    padding: .5em .75em;
+    background-color: var(--primary);
+    border-left: 6px var(--highlight);
+}
+
 :root {
 	/* Colors */
     --primary: rgba(255, 195, 0, 1);
