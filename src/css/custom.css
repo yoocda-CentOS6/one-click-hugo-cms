@@ -6,12 +6,12 @@ pre {
 h1 {
     padding: .5em .75em;
     background-color: #f5f3f2;
-    border-left: 6px var(--primary);
+    border-left: 6px solid var(--primary);
 }
 
 h2, h3 {
     padding: .5em .75em;
-    border-left: 6px var(--primary);
+    border-left: 6px solid var(--primary);
 }
 
 :root {
