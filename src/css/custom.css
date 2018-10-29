@@ -3,7 +3,7 @@ pre {
     background-color: #000000;
 }
 
-h1, h2:not(.primary), h3 {
+h1, h2:not(.primary), h3:not(.primary) {
     padding: .5em .75em;
     background-color: #f5f3f2;
     border-left: 6px solid var(--primary);
