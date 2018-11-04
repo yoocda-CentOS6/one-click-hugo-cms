@@ -79,20 +79,20 @@ Gitをインストールする
     git version X.XX.X.Windows.X
     ```
 
-   ![image2018-10-12_18-7-47.png](/img/image2018-10-12_18-7-47.png)
+    ![image2018-10-12_18-7-47.png](/img/image2018-10-12_18-7-47.png)
 
 3.  以下のコマンドをコピペしてEnterを押す
 
-     ```
-     ssh -V
-     ```
+    ```
+    ssh -V
+    ```
 
-     以下のように表示されればOKです。
+    以下のように表示されればOKです。
 
-     ```
-     OpenSSH_for_Windows_X.XxX, LibreSSL X.X.X
-     ```
+    ```
+    OpenSSH_for_Windows_X.XxX, LibreSSL X.X.X
+    ```
 
-     ![image2018-10-12_18-14-2.png](/img/image2018-10-12_18-14-2.png)
+    ![image2018-10-12_18-14-2.png](/img/image2018-10-12_18-14-2.png)
 
 これでGitのインストールは完了です。
