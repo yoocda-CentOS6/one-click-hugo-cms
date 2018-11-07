@@ -5,8 +5,12 @@ pre {
 
 h1:not(.bg-primary), h2:not(.primary), h3:not(.primary) {
     padding: .5em .75em;
-    background-color: #f5f3f2;
+    /* background-color: #f5f3f2; */
     border-left: 6px solid var(--primary);
+}
+
+.f2 {
+    font-size: 1.5 rem;
 }
 
 :root {
@@ -15,4 +19,7 @@ h1:not(.bg-primary), h2:not(.primary), h3:not(.primary) {
     --highlight: rgba(250, 140, 0, 1);
 }
 
-  
+body {
+    font-size: 0.8 rem;
+    line-height: 1.5;
+}
