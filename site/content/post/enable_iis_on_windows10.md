@@ -1,5 +1,5 @@
 ---
-title: Windows10でIISを起動する方法
+title: IISを起動する方法@Windows10
 date: '2018-10-11T23:02:51+09:00'
 description: こんばんば、batapy88です。今日は、Windows10でIISを起動する方法をメモします。
 ---
@@ -9,11 +9,11 @@ Webサイトを作っていると、Javascriptとかの関係でサーバーにH
 
 でも、仮想マシン立ち上げて、Apacheとかnginxとか設定して、、となると面倒。
 
-## Windows使ってるんだったら、サーバー立てちゃいなよIISで
+## Windows使ってるんだったら、サーバー立てちゃいなよ、IISで！
 
 というわけで、IISでサーバーを立ててみる。
 
-ちなみに、以下はWindows10での方法。
+ちなみに、Windows10でのやり方です。
 
 ### まず初めにIIS機能を有効にする
 
