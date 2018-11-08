@@ -1,7 +1,7 @@
 pre {
     color: #ffffff;
     background-color: #000000;
-    overflow: hidden;
+    overflow: auto;
 }
 
 h1:not(.bg-primary), h2:not(.primary), h3:not(.primary) {
