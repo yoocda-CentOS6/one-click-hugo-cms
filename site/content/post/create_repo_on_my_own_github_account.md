@@ -7,7 +7,7 @@ description: こんばんは。batapy88です。今日は、GitHubに公開リ�
 
 あらかじめGitHubアカウントを取得しておきます。
 
-GitHubアカウントの取得方法は、[前回の記事](./sign_up_for_github/)を読んでください。
+GitHubアカウントの取得方法は、[前回の記事](sign_up_for_github/)を読んでください。
 
 では、リポジトリーを作っていきます。
 
@@ -17,13 +17,13 @@ GitHubアカウントの取得方法は、[前回の記事](./sign_up_for_github
 
 3. 「Repository name」に好きなリポジトリー名を記入します。
 
-* Discriptionは記入してもしなくてもOKです。
+    * Discriptionは記入してもしなくてもOKです。
 
 4. Discription下のラジオボタンが「Public」になっていることを確認します。
 
 5. 「Initialize this repository with a README」にチェックを入れておきます。
 
-* 「Initialize this repository with a README」にチェックを入れなくてもよいですが、あとでいろいろ設定しなくてはならないので、慣れないうちはチェックを入れておいたほうが良いかと思います。
+    * 「Initialize this repository with a README」にチェックを入れなくてもよいですが、あとでいろいろ設定しなくてはならないので、慣れないうちはチェックを入れておいたほうが良いかと思います。
 
 6. 「Create repository」をクリックします。
 
