@@ -14,6 +14,20 @@
       {{ if .Params.image }}<img src="{{ .Params.image }}" alt="{{ .Title }}" />{{ end }}
       {{ .Content }}
       <script type="text/javascript">var a8='a18102331543_2ZRYNR_CI3Q42_2HOM_BUB81';var rankParam='d.QYSU0KnCpGwjvSnRpcMApBbCpBug0rS.ugSMpqGE9Aci9A_';var bannerType='0';var bannerKind='item.fix.kind1';var frame='1';var ranking='1';var category='パソコン・周辺機器';</script><script type="text/javascript" src="//rws.a8.net/rakuten/ranking.js"></script>
+      <nav class="cf pa3">
+          {{ if .Paginator.HasNext }}
+          <a class="fl dib link dim black f6 f5-ns b pa2" title="Next Page" href="{{ .Paginator.Next.URL }}">
+              &larr; まえ
+          </a>
+          {{ end }}
+          <div class="pagination">
+              {{ if .Paginator.HasPrev }}
+              <a class="fl dib link dim black f6 f5-ns b pa2" title="Previous Page" href="{{ .Paginator.Prev.URL }}">
+                  つぎ &rarr;
+              </a>
+              {{ end }}
+          </div>
+      </nav>
     </div>
   </div>
 {{ end }}
