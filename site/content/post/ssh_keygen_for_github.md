@@ -23,7 +23,7 @@ description: こんばんは、batapy88です。今日はGitHubを使う上で�
     ssh-keygen -t rsa -C "username@gmail.com" -N ""
     ```
 
-5. ``` 「Enter file in which to save the key (C:Users\username/.ssh/id_rsa):」``` というメッセージが表示されるので、何も入力しないでそのままEnterを押す
+5. 「Enter file in which to save the key (C:Users\username/.ssh/id_rsa):」というメッセージが表示されるので、何も入力しないでそのままEnterを押す
     以下のような画面が表示されます。
 
     ![image2018-10-15_18-33-4.png](/img/image2018-10-15_18-33-4.png)
