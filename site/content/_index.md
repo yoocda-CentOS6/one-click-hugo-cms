@@ -1,5 +1,5 @@
 ---
-title: Welcome!!
+title: Welcome
 subtitle: GitHubやNetlify-cmsの話題を中心にいろいろ書いていこうと思います。
 image: /img/abaf8273e2873bffff621129e15114dd_m.jpg
 blurb:
