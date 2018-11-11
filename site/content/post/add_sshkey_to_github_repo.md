@@ -39,6 +39,7 @@ description: |-
     ![image2018-10-16_10-12-30.png](/img/image2018-10-16_10-12-30.png)
  
 6. ブラウザでGitHubを開き、ログインする
+
     https://github.com
  
 7. 右上のアバターアイコンをクリックし「Settings」をクリックする
