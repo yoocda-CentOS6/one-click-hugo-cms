@@ -28,7 +28,7 @@ description: |-
     ![image2018-10-16_10-6-29.png](/img/image2018-10-16_10-6-29.png)
 
     .sshフォルダーが開きます。
-    前回の![SSHキーを生成する](../ssh_keygen_for_github.html)で生成した    id_rsa、id_rsa.pubの2つのファイルが入っています。
+    前回の[SSHキーを生成する](../ssh_keygen_for_github.html)で生成した    id_rsa、id_rsa.pubの2つのファイルが入っています。
 
     ![image2018-10-16_10-8-5.png](/img/image2018-10-16_10-8-5.png)
 
