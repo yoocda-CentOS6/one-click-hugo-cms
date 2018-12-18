@@ -7,6 +7,20 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     {{ partial "nav" . }}
+    <div>
+      <script>
+        (function() {
+          var cx = '017369503371885076077:eyschbckehs';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+      </script>
+      <gcse:search></gcse:search>
+    </div>
     {{ block "main" . }}{{ end }} 
     {{ partial "footer" . }} 
   </body>
