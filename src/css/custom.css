@@ -36,6 +36,7 @@ border-width:1px;
 border-color:#EEEEEE; */
 color:#000000;
 /* text-align:left; */
+padding: 1em;
 }
 #srchBox *
 {
@@ -50,10 +51,10 @@ padding:0;
 border:none;
 display: none;
 }
-#srchBox #srch
+/* #srchBox #srch
 {
 padding:10px 10px 10px 10px;
-}
+} */
 #srchBox #srch #srchForm
 {
 white-space:nowrap;
