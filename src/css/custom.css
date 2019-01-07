@@ -69,14 +69,14 @@ margin-right:6px;
 {
 width:80px;
 }
-*html #srchBox #srchBtn
+/* *html #srchBox #srchBtn
 {
 padding-top:2px;
 }
 *:first-child+html #srchBox #srchBtn
 {
 padding-top:2px;
-}
+} */
 #srchBox ul
 {
 margin-top:6px;
