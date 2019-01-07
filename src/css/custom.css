@@ -25,7 +25,7 @@ body {
     line-height: 1.5;
 }
 
-/* #srchBox
+#srchBox
 {
 width:298px;
 _width:296px;
@@ -131,4 +131,4 @@ background: #fff;
 #srchBox.watermark #srchLogo
 {
 display: none;
-} */
+}
