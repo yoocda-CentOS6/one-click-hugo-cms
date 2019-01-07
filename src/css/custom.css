@@ -29,25 +29,26 @@ body {
 {
 width:298px;
 _width:296px;
-margin-bottom:10px;
+/* margin-bottom:10px; */
 background-color:#FFFFFF;
-border-style:solid;
+/* border-style:solid;
 border-width:1px;
-border-color:#EEEEEE;
+border-color:#EEEEEE; */
 color:#000000;
-text-align:left;
+/* text-align:left; */
 }
 #srchBox *
 {
 margin:0;
 padding:0;
-font-size:13px;
+/* font-size:13px;
 *font-size:small;
-*font:x-small;
+*font:x-small; */
 }
 #srchBox a img
 {
 border:none;
+display: none;
 }
 #srchBox #srch
 {
@@ -114,7 +115,7 @@ font-size:85%;
 {
 text-decoration:underline;
 }
-#srchBox.watermark
+/* #srchBox.watermark
 {
 padding-bottom: 6px;
 }
@@ -131,4 +132,4 @@ background: #fff;
 #srchBox.watermark #srchLogo
 {
 display: none;
-}
+} */
