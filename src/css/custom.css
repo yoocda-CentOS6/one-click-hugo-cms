@@ -63,6 +63,7 @@ white-space:nowrap;
 {
 width:200px;
 margin-right:6px;
+line-height: normal;
 /* vertical-align:bottom; */
 }
 #srchBox #srchBtn
