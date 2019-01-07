@@ -36,6 +36,7 @@ border-width:1px;
 border-color:#EEEEEE; */
 color:#000000;
 /* text-align:left; */
+padding: 1rem;
 }
 #srchBox *
 {
@@ -76,7 +77,6 @@ background-color: inherit;
 font-family:Nunito Sans,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
 font-weight: 700;
 color:#595756;
-padding: 1rem;
 }
 /* *html #srchBox #srchBtn
 {
