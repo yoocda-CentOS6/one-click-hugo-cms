@@ -49,7 +49,9 @@ padding:0;
 #srchBox:hover {
 box-shadow: inset 0 -4px 0 #ffc300;
 }
-
+#srchBox:focus {
+box-shadow: none;
+}
 #srchBox a img
 {
 border:none;
