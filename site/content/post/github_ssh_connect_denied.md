@@ -3,12 +3,17 @@ title: GitHubとのssh接続が切れて、ハマったのでメモ
 date: '2018-10-05T22:28:49+09:00'
 description: こんばんは。batapy88です。GitHubとのssh接続が突然途切れて、かなり困ったのでそのときのメモです。同じように困ってる人の役に立てれば。
 ---
+## 環境
+
+Windows 10 Pro
+
+
 ## 症状
 
-git fetch、git pull、git pushすると以下のエラーメッセージが出る。
+git fetch、git pull、git pushのどれをやっても以下のエラーメッセージが出る。
 
 ```
-Load key "/c/Users/batapy88/.ssh/id_rsa": Permission denied
+Load key "/c/Users/Username/.ssh/id_rsa": Permission denied
 git@github.com: Permission denied (publickey).
 fatal: Could not read from remote repository.
 ```
@@ -17,11 +22,13 @@ fatal: Could not read from remote repository.
 
 GitHubのssh and GPG keysには確かにsshキーが登録されている。
 
-怪しいので新たにsshキーペアを作成する。
+怪しいのでsshキーペアを作り直してみようと思い、まずGitHubのリポジトリのSettingsからsshキーを削除し、その後ローカル上のid_rsaを削除した。
 
-Windows10なので、cmd.exeで叩いていたが、git-bash.exeでないとオフィシャルの説明についていけないためgit-bash.exeを起動。
+そこからsshキーペアの作成と登録を何度も試みるがことごとく失敗。
 
-システム環境変数を開き、git-bash.eceにPATHを通す。
+Windows10なので、cmd.exeで叩いていたが、git-bash.exeでないとGitHubの公式サイトの説明内容についていけないためgit-bash.exeを起動。
+
+システム環境変数を開き、git-bash.exeにPATHを通した。
 
 ```
 C:\Program Files\Git\git-bash.exe
@@ -33,27 +40,27 @@ C:\Program Files\Git\git-bash.exe
 ssh-keygen -t rsa -b 4096 -C "batapy88@batapy88.com"
 ```
 
-秘密鍵登録しようとするも、sshエージェント起動に失敗
+その状態から秘密鍵登録しようとするも、こんどはsshエージェント起動に失敗。
 
 ```
 $ ssh-add id_rsa
 Could not open a connection to your authentication agent.
 ```
 
-以下コマンドをgit-bash.exeで入力
+以下コマンドをgit-bash.exeで入力。
 
 ```
 $ eval `ssh-agent -s`
 ```
 
-入力直後にpidが表示されればsshエージェント起動完了
+入力直後にpidが表示されればsshエージェント起動完了。
 
 ```
 $ eval `ssh-agent -s`
 Agent pid 10516
 ```
 
-再度、秘密鍵登録を試みるが今度はアクセス拒否される。
+再度、秘密鍵登録を試みる。が、今度はアクセス拒否される。
 
 ```
 $ ssh-add id_rsa
@@ -67,9 +74,9 @@ chmod 600 id_rsa
 chmod: changing permissions of 'id_rsa': Permission denied
 ```
 
-Windowsエクスプローラーで~/.sshフォルダを開く
+Windowsエクスプローラーで~/.sshフォルダを開く。
 
-id_rsa、id_rsa.pubのアクセス権を以下のように変更する
+id_rsa、id_rsa.pubを右クリックしてアクセス権を以下のように変更する。
 （念のためconfigのアクセス権も変更した）
 
 #### セキュリティタブ
