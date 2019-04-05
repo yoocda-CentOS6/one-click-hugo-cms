@@ -8,7 +8,7 @@ description: こんばんは。batapy88です。GitHubとのssh接続が突然�
 git fetch、git pull、git pushすると以下のエラーメッセージが出る。
 
 ```
-Load key "/c/Users/hirofumi-yoshida.SCIENCE/.ssh/id_rsa": Permission denied
+Load key "/c/Users/batapy88/.ssh/id_rsa": Permission denied
 git@github.com: Permission denied (publickey).
 fatal: Could not read from remote repository.
 ```
