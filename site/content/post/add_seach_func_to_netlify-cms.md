@@ -30,7 +30,7 @@ Googleの検索機能を自分のサイトに導入できるのだから、す�
 
 ナビゲーションバーの下を調整するには以下のファイルを編集する。
 
-``` /site/layout/_default/baseof.html ```
+``` /site/layouts/_default/baseof.html ```
 
 baseof.htmlの中身のオリジナルはこんな感じ。
 
