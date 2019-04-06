@@ -5,7 +5,7 @@ description: こんにちは、batapy88です。2019年が始まりました。�
 ---
 ## まずは位置を移動する
 
-[前回の記事]「(https://batapy88.com/post/add_seach_func_to_netlify-cms/)」で、検索ボックスをとりあえずナビゲーションバーの下に追加してみましたが、レイアウト調整を後回しにしていました。
+[前回の記事](https://batapy88.com/post/add_seach_func_to_netlify-cms/)で、検索ボックスをとりあえずナビゲーションバーの下に追加してみましたが、レイアウト調整を後回しにしていました。
 
 まずは位置を変えることから始めます。
 
