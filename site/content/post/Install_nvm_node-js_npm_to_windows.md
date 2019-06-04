@@ -16,9 +16,9 @@ Windowsの場合、先にC:\にworkspaceフォルダを作っておくほうが�
 
 1. 以下のページからnvm-setup.zipのV1.1.7以降をダウンロードする
 
-   https://github.com/coreybutler/nvm-windows/releases
+    https://github.com/coreybutler/nvm-windows/releases
 
-   (2019年6月更新：V1.1.7より前では、npmが正常にインストールできないためインストール中に必ずエラーになります。
+    (2019年6月更新：V1.1.7より前では、npmが正常にインストールできないためインストール中に必ずエラーになります。
 
 2. ダウンロードしたnvm-setup.zipを解凍する
 
