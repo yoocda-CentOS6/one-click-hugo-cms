@@ -50,7 +50,7 @@ Windowsの場合、先にC:\にworkspaceフォルダを作っておくほうが�
 
     ```
     C:\Users\YourUserName>nvm -v
-    
+
     Running version 1.1.7.
 
     Usage:
