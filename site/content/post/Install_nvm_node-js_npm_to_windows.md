@@ -18,25 +18,25 @@ Windowsの場合、先にC:\にworkspaceフォルダを作っておくほうが�
 
     https://github.com/coreybutler/nvm-windows/releases
 
-    (2019年6月更新：V1.1.7より前では、npmが正常にインストールできないためインストール中に必ずエラーになります。
+    - 2019年6月更新：V1.1.7より前では、npmが正常にインストールできないためインストール中に必ずエラーになります。
 
 2. ダウンロードしたnvm-setup.zipを解凍する
 
 3. 解凍したフォルダー内のnvm-set-up.exeを実行する
 
-   インストールウィザードが起動します。
+    インストールウィザードが起動します。
 
 4. nvmをインストールするフォルダを「C:\workspace\nvm」に変更して「次へ」をクリックする
 
-   ![nvm01.png](/img/nvm01.png)
+    ![nvm01.png](/img/nvm01.png)
 
 5. Node.jsをインストールするフォルダを「C:\workspace\nodejs」に変更して「次へ」をクリックする
 
-   ![nvm02.png](/img/nvm02.png)
+    ![nvm02.png](/img/nvm02.png)
 
 6. 最後に「インストール」をクリックする
 
-   nvmがインストールされます。
+    nvmがインストールされます。
 
 ## nvmのインストール後確認
 
@@ -67,53 +67,53 @@ Windowsの場合、先にC:\にworkspaceフォルダを作っておくほうが�
 
 1. `nvm list available` を入力してEnterを押す
 
-   ```
-   C:\Users\YourUserName>nvm list available
-   ```
+    ```
+    C:\Users\YourUserName>nvm list available
+    ```
 
-   現在インストールできるNode.jsが一覧で表示されます。
+    現在インストールできるNode.jsが一覧で表示されます。
 
-   だいたいの場合はLTSの一番上に表示されているバージョンを使えばOKです。
+    だいたいの場合はLTSの一番上に表示されているバージョンを使えばOKです。
 
 2. `nvm install` に続けてバージョンとビット数を入力してEnterを押す
 
-   ビット数のところは、使っているPCのビット数（64bitまたは32bit）に合わせて「64」または「32」を入力します。
-   64bitの場合は、入力を省略することもできます。
-   32bitの場合は、必ず入力しましょう。
+    ビット数のところは、使っているPCのビット数（64bitまたは32bit）に合わせて「64」または「32」を入力します。
+    64bitの場合は、入力を省略することもできます。
+    32bitの場合は、必ず入力しましょう。
 
-   ```
-   C:\Users\YourUserName>node install 10.16.0 32
-   ```
+    ```
+    C:\Users\YourUserName>node install 10.16.0 32
+    ```
 
-   Node.jsとnpmがインストールされます。
+    Node.jsとnpmがインストールされます。
 
 ## Node.jsとnpmのインストール後確認
 
 1. コマンドプロンプトに `node -v`と入力してEnterを押す
 
-   ```
-   C:\Users\YourUserName>node -v
-   ```
+    ```
+    C:\Users\YourUserName>node -v
+    ```
 
-   バージョンが表示されればNode.jsは正しくインストールできています。
+    バージョンが表示されればNode.jsは正しくインストールできています。
 
-   ```
-   C:\Users\YourUserName>node -v
-   v10.16.0
-   ```
+    ```
+    C:\Users\YourUserName>node -v
+    v10.16.0
+    ```
 
 3. `npm -v`と入力してEnterを押す
 
-   ```
-   C:\Users\YourUserName>npm -v
-   ```
+    ```
+    C:\Users\YourUserName>npm -v
+    ```
 
-   バージョンが表示されればnpmは正しくインストールできています。
+    バージョンが表示されればnpmは正しくインストールできています。
 
-   ```
-   C:\Users\YourUserName>npm -v
-   6.9.0
-   ```
+    ```
+    C:\Users\YourUserName>npm -v
+    6.9.0
+    ```
 
 以上でnvm、Node.js、npmのインストールは完了です。
 
