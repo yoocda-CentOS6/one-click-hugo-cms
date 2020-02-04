@@ -29,9 +29,9 @@ GitHubのssh and GPG keysには確かにsshキーが登録されている。
 
 その状態からsshキーペアの作成と登録を何度も試みるがことごとく失敗。
 
-GitHubの公式サイトの説明内容を読んでみる。
+![GitHubの公式ヘルプ](https://help.github.com/ja/github/authenticating-to-github/error-permission-denied-publickey)の説明内容を読んでみる。
 
-Windows10なので、cmd.exeで叩いていたが、git-bash.exeでないとGitHubの公式サイトの説明内容についていけないためgit-bash.exeを起動。
+Windows10なので、cmd.exeで叩いていたが、git-bash.exeでないと公式ヘルプの説明内容についていけないためgit-bash.exeを起動。
 
 システム環境変数を開き、git-bash.exeにPATHを通した。
 
@@ -94,6 +94,7 @@ id_rsa、id_rsa.pubを右クリックしてアクセス権を以下のように�
 |ローカルアドミニストレーター|全部チェックを入れる|全部チェック外す|
 
 
+
 変更後、再度秘密鍵登録を試みる。今度は登録成功。
 
 ```
@@ -109,3 +110,13 @@ Hi batapy88! You've successfully authenticated, but GitHub does not provide shel
 ```
 
 無事つながった。
+
+## 考えられる原因
+
+再現テストをやったわけではないので、参考程度に読んでほしい。
+
+おそらく別に何かの作業（ssh鍵関連か？）をやっているうちに、不用意にコマンドをたたいてしまったか、タスクマネージャー等でssh-agentのプロセスを殺してしまったのではないかと推測している。
+
+ただ、Windowsなので正直なところ何をやってしまったのか、上記の手順で解決はしたもののアクセス権が本当の原因だったのか、は不明なままになってしまっている。
+
+後日、検証できたら続報を記入したい。

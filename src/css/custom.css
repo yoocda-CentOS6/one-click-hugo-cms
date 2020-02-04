@@ -41,12 +41,11 @@ table td, table th {
     border: 1px solid black;
 }
 
-table.gsc-search-box td, table.gsc-search-box th {
-    border: 0;
-}
-
-
 table th {
     background-color: lightgray;
     font-weight: bold;
+}
+
+table.gsc-search-box td, table.gsc-search-box th {
+    border: 0;
 }
