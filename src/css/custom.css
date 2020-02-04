@@ -36,3 +36,10 @@ body {
 td.gsc-search-button > button {
     width:5vw;
 }
+table th {
+    background-color: lightgray;
+}
+
+table td, table th {
+    border: 1px solid black;
+}
