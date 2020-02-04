@@ -39,8 +39,12 @@ td.gsc-search-button > button {
 
 table td, table th {
     border: 1px solid black;
-    font-size: small;
 }
+
+table.gsc-search-box td, table.gsc-search-box th {
+    border: 0;
+}
+
 
 table th {
     background-color: lightgray;
